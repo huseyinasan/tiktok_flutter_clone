@@ -142,37 +142,37 @@ class ThemeConst {
     ),
     primaryTextTheme: TextTheme(
       displayLarge: GoogleFonts.lato(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 40,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ),
       displayMedium: GoogleFonts.lato(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 28,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ),
       displaySmall: GoogleFonts.lato(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 20,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ),
       headlineMedium: GoogleFonts.lato(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 18,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ),
       headlineSmall: GoogleFonts.lato(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 14,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
       ),
       titleLarge: GoogleFonts.lato(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 12,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal,
@@ -905,8 +905,10 @@ class ThemeConst {
           900: Color(0xff191919)
         },
       ),
-    )
-        .copyWith(background: const Color(0xff616161))
-        .copyWith(error: const Color(0xffd32f2f)),
+    ).copyWith(
+      background: const Color(0xff616161),
+      error: const Color(0xffd32f2f),
+      brightness: Brightness.dark, // This ensures the brightness is set to dark
+    ),
   );
 }
